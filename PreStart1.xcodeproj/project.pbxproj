@@ -14,6 +14,9 @@
 		065C1DD827AD2F3B0074E1C3 /* PreStart1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C1DD727AD2F3B0074E1C3 /* PreStart1Tests.swift */; };
 		065C1DE227AD2F3B0074E1C3 /* PreStart1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C1DE127AD2F3B0074E1C3 /* PreStart1UITests.swift */; };
 		065C1DE427AD2F3B0074E1C3 /* PreStart1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C1DE327AD2F3B0074E1C3 /* PreStart1UITestsLaunchTests.swift */; };
+		065C1DF127AD32EE0074E1C3 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C1DF027AD32EE0074E1C3 /* Tutor.swift */; };
+		065C1DF427AD366C0074E1C3 /* Tutor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065C1DF327AD366C0074E1C3 /* Tutor.xcassets */; };
+		065C1DF927AD422B0074E1C3 /* TutorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C1DF827AD422B0074E1C3 /* TutorDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		065C1DDD27AD2F3B0074E1C3 /* PreStart1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreStart1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		065C1DE127AD2F3B0074E1C3 /* PreStart1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreStart1UITests.swift; sourceTree = "<group>"; };
 		065C1DE327AD2F3B0074E1C3 /* PreStart1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreStart1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		065C1DF027AD32EE0074E1C3 /* Tutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
+		065C1DF327AD366C0074E1C3 /* Tutor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutor.xcassets; sourceTree = "<group>"; };
+		065C1DF827AD422B0074E1C3 /* TutorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,8 @@
 		065C1DBA27AD2F360074E1C3 = {
 			isa = PBXGroup;
 			children = (
+				065C1DF527AD41C80074E1C3 /* ViewModel */,
+				065C1DF227AD32F30074E1C3 /* Model */,
 				065C1DC527AD2F360074E1C3 /* PreStart1 */,
 				065C1DD627AD2F3B0074E1C3 /* PreStart1Tests */,
 				065C1DE027AD2F3B0074E1C3 /* PreStart1UITests */,
@@ -96,6 +104,7 @@
 			children = (
 				065C1DC627AD2F360074E1C3 /* PreStart1App.swift */,
 				065C1DC827AD2F360074E1C3 /* ContentView.swift */,
+				065C1DF327AD366C0074E1C3 /* Tutor.xcassets */,
 				065C1DCA27AD2F3A0074E1C3 /* Assets.xcassets */,
 				065C1DCC27AD2F3A0074E1C3 /* Preview Content */,
 			);
@@ -125,6 +134,22 @@
 				065C1DE327AD2F3B0074E1C3 /* PreStart1UITestsLaunchTests.swift */,
 			);
 			path = PreStart1UITests;
+			sourceTree = "<group>";
+		};
+		065C1DF227AD32F30074E1C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				065C1DF027AD32EE0074E1C3 /* Tutor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		065C1DF527AD41C80074E1C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				065C1DF827AD422B0074E1C3 /* TutorDetail.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +258,7 @@
 			files = (
 				065C1DCE27AD2F3A0074E1C3 /* Preview Assets.xcassets in Resources */,
 				065C1DCB27AD2F3A0074E1C3 /* Assets.xcassets in Resources */,
+				065C1DF427AD366C0074E1C3 /* Tutor.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				065C1DC927AD2F360074E1C3 /* ContentView.swift in Sources */,
+				065C1DF927AD422B0074E1C3 /* TutorDetail.swift in Sources */,
 				065C1DC727AD2F360074E1C3 /* PreStart1App.swift in Sources */,
+				065C1DF127AD32EE0074E1C3 /* Tutor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

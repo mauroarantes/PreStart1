@@ -17,17 +17,19 @@ class PreStart1Tests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testTutorCell() {
+        let tutor = Tutor(name: "Mahesh", headline: "Manager", bio: "iOS")
+        let tutorCell = TutorCell(tutor: tutor)
+        
+        XCTAssertEqual(tutor.name, tutorCell.tutor.name)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testTutorDetail() {
+        let tutor = Tutor(name: "Mahesh", headline: "Manager", bio: "iOS")
+        let tutorDetail = TutorDetail(name: tutor.name, headline: tutor.headline, bio: tutor.bio)
+        
+        XCTAssertEqual(tutor.name, tutorDetail.name)
     }
 
 }
